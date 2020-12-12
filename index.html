@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- opening tag -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- make the website responsive -->
@@ -8,26 +9,35 @@
     <meta name="description" content="what is the site about">
     <meta name="keywords" content="training, online training">
     <title>Online training</title>
+ 
     <style>
+        /* internal */
         body {
             overflow-x: hidden;
         }
-        /* img{
-            max-width: 100%;
-            height: auto;
-        } */
+
+        nav {
+            background-color: lightblue;
+            height: 50px;
+        }
+
         img {
             max-width: 100%;
             height: auto;
         }
     </style>
 </head>
+
 <body>
     <nav>
-        <a href="#table-layout">TABLE LAYOUT</a> | 
-        <a href="#div">DIV</a> | 
-        <a href="#HTML-lists">HTML LISTS</a> | 
-        <a href="#contact">CONTACT FORM</a>
+        <h1 style="display: inline;">Lo<span
+                style="color: lightcoral;font-size: 25px; font-weight: 600; margin-right: auto;">Go</span></h1>
+        <div style="float: right;">
+            <a href="#table-layout">TABLE LAYOUT</a> |
+            <a href="#div">DIV</a> |
+            <a href="#HTML-lists">HTML LISTS</a> |
+            <a href="#contact">CONTACT FORM</a>
+        </div>
     </nav>
     <!-- header is different from head. header is mostly used for first section or introduction. this is optional Section or div can also be used -->
     <header>
@@ -40,6 +50,7 @@
             <h1>You can use HTML table for layout.</h1>
             <em title="em is emphasis tag to emphasize and italize a text.">A layout can changed by having more than one
                 content adjacent to each other</em>
+            <i>italics</i>
             <table>
                 <tr>
                     <td><img src="/images/TenSketch_logo.jpg" alt="TenSketch_logo"></td>
@@ -81,7 +92,7 @@
         <h3>everything wihtin a div is one divion</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio quisquam voluptatem ipsa suscipit nobis
             provident perspiciatis corrupti eveniet, tempora odio quod illum ab omnis debitis quae iusto maxime hic!</p>
-        <img src="/images/e-learning.jpg" style="height:500px" alt="e-learning">
+        <img src="/images/e-learning.jpg" alt="e-learning">
     </div>
     <section id="HTML-lists">
         <!-- ordered list -->
@@ -104,25 +115,36 @@
         </ul>
     </section>
     <hr noshade>
-    
+
     <section id="contact">
+        <!-- <div>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15542.31861988625!2d80.1926068!3d13.1257942!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc95e23587f9ee273!2sTenSketch!5e0!3m2!1sen!2sin!4v1607780953381!5m2!1sen!2sin"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen aria-hidden="false"
+            tabindex="0"></iframe>
+
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5clY-zv_lDM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
         <!-- WIN BTN PLUS . tp open emoji inspector -->
         📞&nbsp;<a href="tel:+919840166419">9840166419</a>
         ✉&nbsp;<a href="mailto:bala@tensketch.com">bala@tensketch.com</a>
         <br><br>
         <form action="">
             <label for="name">Name</label>
-            <input type="text" name="Name" id="">
+            <input type="text" name="Name" id=""><br><br>
             <label for="email">Email</label>
-            <input type="email" name="Email" id="">
+            <input type="email" name="Email" id=""><br><br>
             <label for="Mobile no">Mobile no</label>
             <input type="tel" name="Phone" id="">
             <button>submit</button>
         </form>
     </section>
-    <footer style="background-color: burlywood; text-align: center; height: 10vh;">
+    <footer style="background-color: burlywood; text-align: center; height: 10vh">
         <p>site is for educational purpose</p>
         <p>copyrights @ <a href="https://www.tensketch.com/">TenSketch</a> 2020</p>
     </footer>
 </body>
+
 </html>
