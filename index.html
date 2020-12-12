@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- opening tag -->
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <!-- make the website responsive -->
@@ -9,78 +8,121 @@
     <meta name="description" content="what is the site about">
     <meta name="keywords" content="training, online training">
     <title>Online training</title>
-   
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        /* img{
+            max-width: 100%;
+            height: auto;
+        } */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
-
-<!-- header is different from head. header is mostly used for first section or introduction. this is optional Section or div can also be used -->
-<header style="background-color: greenyellow;">
-    <h1>Yoga for life</h1>
-    <img src="images/yoga-event.jpg" style="max-width: 100%;height: auto;" alt="yoga pic">
-</header>
-
-
-<section>
-    <table border="1" cellspacing="10"cellpadding="5">
-        <tr>
-            <th>Name</th>
-            <th>Dept</th>
-        </tr>
-        <tr>
-            <td>Fahima</td>
-            <td>CSE</td>
-        </tr>
-    </table>
-</section>
-<div>
-    <h2>div is a block level element which means division</h2>
-    <h3>everything wihtin a div is one divion</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio quisquam voluptatem ipsa suscipit nobis
-        provident
-        perspiciatis corrupti eveniet,
-        <!-- self closing tags -->
-        <span><cite title="self closing tag- <br> is used">self closing tags</cite></span><br> tempora odio quod illum
-        ab omnis debitis quae iusto maxime hic!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio quisquam voluptatem ipsa suscipit nobis
-        provident
-        perspiciatis corrupti eveniet, tempora odio quod illum ab omnis debitis quae iusto maxime hic!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio quisquam voluptatem ipsa suscipit nobis
-        provident
-        perspiciatis corrupti eveniet, tempora odio quod illum ab omnis debitis quae iusto maxime hic!</p>
-</div>
-
-<!-- self closing tags -->
-<span><cite title="self closing tag- <hr> is used">self closing tags</cite></span>
-<hr>
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio quisquam voluptatem ipsa suscipit nobis provident
-    perspiciatis corrupti eveniet, tempora odio quod illum ab omnis debitis quae iusto maxime hic!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio quisquam voluptatem ipsa suscipit nobis provident
-    perspiciatis corrupti eveniet, tempora odio quod illum ab omnis debitis quae iusto maxime hic!</p>
-
-<!-- ordered list -->
-<h3>Ordered list</h3>
-<ol title="Ordered list">
-    <!-- list item -->
-    <li title="list item">one</li>
-    <li>two</li>
-    <li>three</li>
-    <li>four</li>
-</ol>
-<hr noshade>
-<!-- unordered list -->
-<h3>Unordered list</h3>
-<ul title="Unordered list">
-    <li title="list item">undordered one</li>
-    <li>undordered two</li>
-    <li>undordered three</li>
-    <li>undordered four</li>
-</ul>
-
-
-<footer style="background-color: burlywood; text-align: center;">
-    <p>site is for educational purpose</p>
-    <p>copyrights @ <a href="https://www.tensketch.com/">TenSketch</a> 2020</p>
-</footer>
+<body>
+    <nav>
+        <a href="#table-layout">TABLE LAYOUT</a> | 
+        <a href="#div">DIV</a> | 
+        <a href="#HTML-lists">HTML LISTS</a> | 
+        <a href="#contact">CONTACT FORM</a>
+    </nav>
+    <!-- header is different from head. header is mostly used for first section or introduction. this is optional Section or div can also be used -->
+    <header>
+        <h1>Yoga for life</h1>
+        <img src="images/yoga-event.jpg" alt="yoga pic">
+    </header>
+    <section id="table-layout">
+        <!-- table for layout -->
+        <div>
+            <h1>You can use HTML table for layout.</h1>
+            <em title="em is emphasis tag to emphasize and italize a text.">A layout can changed by having more than one
+                content adjacent to each other</em>
+            <table>
+                <tr>
+                    <td><img src="/images/TenSketch_logo.jpg" alt="TenSketch_logo"></td>
+                    <td>
+                        <h1>TenSketch is a website designing an branding company in Chennai</h1>
+                        <h2>It has recently started <i>Online training program in front-end development</i></h2>
+                        <i><a href="https://forms.gle/oa5aJ4BBsn5N5PbN8"
+                                title="get skilled in HTML, CSS, bootstrap and GitHub in just 30 days">You can register
+                                here</a></i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <em>self closing tag hr is used above to draw an horizontal rule</em>
+        <div>
+            <h2>a simple HTML table with border</h2>
+            <!-- note that cellspacing="10" cellpadding="5" border="1" are deprecated attributes. To learn more - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table -->
+            <table cellspacing="10" cellpadding="5" border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Dept</th>
+                    <th colspan="2" bgcolor="aqua"
+                        title="using colspan attribute we can occupy more than one column and this is a valid one.">
+                        Skills</th>
+                </tr>
+                <tr>
+                    <td>Fahima</td>
+                    <td>CSE</td>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <div id="div" style="background-color: lightblue; padding: 5rem;"
+        title="this div has 3 elements. a bg color and padding is used to show that it is one <div>">
+        <h2>div is a block level element which means division</h2>
+        <h3>everything wihtin a div is one divion</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio quisquam voluptatem ipsa suscipit nobis
+            provident perspiciatis corrupti eveniet, tempora odio quod illum ab omnis debitis quae iusto maxime hic!</p>
+        <img src="/images/e-learning.jpg" style="height:500px" alt="e-learning">
+    </div>
+    <section id="HTML-lists">
+        <!-- ordered list -->
+        <h3 title="Ordered list">Ordered list</h3>
+        <ol>
+            <!-- list item -->
+            <li title="list item">one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+        </ol>
+        <hr noshade>
+        <!-- unordered list -->
+        <h3>Unordered list</h3>
+        <ul title="Unordered list">
+            <li title="list item">undordered one</li>
+            <li>undordered two</li>
+            <li>undordered three</li>
+            <li>undordered four</li>
+        </ul>
+    </section>
+    <hr noshade>
+    
+    <section id="contact">
+        <!-- WIN BTN PLUS . tp open emoji inspector -->
+        📞&nbsp;<a href="tel:+919840166419">9840166419</a>
+        ✉&nbsp;<a href="mailto:bala@tensketch.com">bala@tensketch.com</a>
+        <br><br>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="Name" id="">
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="">
+            <label for="Mobile no">Mobile no</label>
+            <input type="tel" name="Phone" id="">
+            <button>submit</button>
+        </form>
+    </section>
+    <footer style="background-color: burlywood; text-align: center; height: 10vh;">
+        <p>site is for educational purpose</p>
+        <p>copyrights @ <a href="https://www.tensketch.com/">TenSketch</a> 2020</p>
+    </footer>
 </body>
-
 </html>
